@@ -7,6 +7,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // These half-step spacing values are used across the site (p-7.5, px-4.5,
+      // w-8.5, gap-5.5, mb-5.5, …) but are NOT part of Tailwind's default scale,
+      // so without this they silently compile to nothing — which is what made
+      // card padding collapse and testimonial text overlap the avatars.
+      spacing: {
+        "4.5": "1.125rem", // 18px
+        "5.5": "1.375rem", // 22px
+        "6.5": "1.625rem", // 26px
+        "7.5": "1.875rem", // 30px
+        "8.5": "2.125rem", // 34px
+        "9.5": "2.375rem", // 38px
+        "13": "3.25rem", // 52px
+      },
       colors: {
         wine: {
           DEFAULT: "#A63B69",

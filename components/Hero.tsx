@@ -96,7 +96,7 @@ export default function Hero() {
             </a>
           </Reveal>
 
-          <Reveal delay={0.3} className="flex gap-9">
+          <Reveal delay={0.3} className="flex flex-wrap gap-x-9 gap-y-5">
             <div className="flex flex-col gap-0.5">
               <strong className="font-serif text-2xl text-wine-dark">100%</strong>
               <span className="text-[12.5px] text-ink-soft">Verified Listings</span>
@@ -143,7 +143,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <Reveal className="hidden sm:flex absolute top-[6%] left-[-8%] items-center gap-2.5 px-4.5 py-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/50 shadow-xl z-[4] animate-floatY">
+          <Reveal className="hidden lg:flex absolute top-[6%] left-[-8%] items-center gap-2.5 px-4.5 py-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/50 shadow-xl z-[4] animate-floatY">
             <div className="w-8.5 h-8.5 rounded-[11px] bg-pink text-wine-dark flex items-center justify-center flex-shrink-0">
               <HomeIcon size={17} />
             </div>
@@ -155,7 +155,7 @@ export default function Hero() {
 
           <Reveal
             delay={0.15}
-            className="hidden sm:flex absolute bottom-[14%] right-[-10%] items-center gap-2.5 px-4.5 py-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/50 shadow-xl z-[4]"
+            className="hidden lg:flex absolute bottom-[14%] right-[-10%] items-center gap-2.5 px-4.5 py-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/50 shadow-xl z-[4]"
           >
             <div className="w-8.5 h-8.5 rounded-[11px] bg-[#fdf3e6] text-gold flex items-center justify-center flex-shrink-0">
               <TrendingUp size={17} />
@@ -168,7 +168,7 @@ export default function Hero() {
 
           <Reveal
             delay={0.25}
-            className="hidden sm:flex absolute bottom-[2%] left-[-4%] items-center gap-2.5 px-4.5 py-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/50 shadow-xl z-[4]"
+            className="hidden lg:flex absolute bottom-[2%] left-[-4%] items-center gap-2.5 px-4.5 py-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/50 shadow-xl z-[4]"
           >
             <div className="w-8.5 h-8.5 rounded-[11px] bg-wine/10 text-wine flex items-center justify-center flex-shrink-0">
               <MapPin size={17} />
