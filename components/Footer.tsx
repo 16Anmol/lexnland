@@ -53,8 +53,17 @@ export default function Footer() {
             <h5 className="text-[13px] font-semibold uppercase tracking-[0.04em] text-ink-soft mb-5">
               Legal
             </h5>
-            {["Privacy Policy", "Terms & Conditions", "Cookie Policy"].map((l) => (
-              <a key={l} href="#" className="block text-sm mb-3.5 transition-colors hover:text-wine">
+            {[
+              { l: "Privacy Policy", href: "/privacy-policy" },
+              { l: "Delete Account", href: "/delete-account" },
+              { l: "Terms & Conditions", href: "#" },
+              { l: "Cookie Policy", href: "#" },
+            ].map(({ l, href }) => (
+              <a
+                key={l}
+                href={href}
+                className="block text-sm mb-3.5 transition-colors hover:text-wine"
+              >
                 {l}
               </a>
             ))}
